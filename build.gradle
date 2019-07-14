@@ -1,0 +1,21 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example.twilio'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'com.twilio.sdk:twilio:7.37.4'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
